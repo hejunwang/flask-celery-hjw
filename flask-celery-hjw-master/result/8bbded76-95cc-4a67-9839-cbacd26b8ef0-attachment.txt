@@ -1,0 +1,1 @@
+WARNING  celery.redirected:log.py:227 测试结果:Test_Xlr002_1

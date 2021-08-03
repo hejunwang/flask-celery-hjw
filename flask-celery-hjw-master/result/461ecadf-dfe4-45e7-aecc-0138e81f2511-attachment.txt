@@ -1,0 +1,21 @@
+WARNING  celery.redirected:log.py:227 ---------------token---------------------
+WARNING  celery.redirected:log.py:227 <configparser.ConfigParser object at 0x7f8dda118e80>
+WARNING  celery.redirected:log.py:227 https://test.xlvren.com/bp/login
+WARNING  celery.redirected:log.py:227 ---------------headers---------------------
+WARNING  celery.redirected:log.py:227 **************************************************
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 ERROR    root:mylogger.py:84 测试结果:{'errorCode': 0, 'data': {'token': '27ecc906-a571-457b-a3f7-a5962e2866eb', 'sid': 'AKAcGfIabiT4'}}
+ERROR    root:mylogger.py:84 测试结果:{'errorCode': 0, 'data': {'token': '27ecc906-a571-457b-a3f7-a5962e2866eb', 'sid': 'AKAcGfIabiT4'}}
+WARNING  celery.redirected:log.py:227 [2021-06-08 09:01:32,857] | mylogger.py |ERROR : 测试结果:{'errorCode': 0, 'data': {'token': '27ecc906-a571-457b-a3f7-a5962e2866eb', 'sid': 'AKAcGfIabiT4'}}
+WARNING  celery.redirected:log.py:227 **************************************************
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 token:27ecc906-a571-457b-a3f7-a5962e2866eb
+DEBUG    root:mylogger.py:80 token:27ecc906-a571-457b-a3f7-a5962e2866eb
+WARNING  celery.redirected:log.py:227 [2021-06-08 09:01:32,858] | mylogger.py |DEBUG : token:27ecc906-a571-457b-a3f7-a5962e2866eb
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 token:27ecc906-a571-457b-a3f7-a5962e2866eb
+DEBUG    root:mylogger.py:80 token:27ecc906-a571-457b-a3f7-a5962e2866eb
+WARNING  celery.redirected:log.py:227 [2021-06-08 09:01:32,860] | mylogger.py |DEBUG : token:27ecc906-a571-457b-a3f7-a5962e2866eb
