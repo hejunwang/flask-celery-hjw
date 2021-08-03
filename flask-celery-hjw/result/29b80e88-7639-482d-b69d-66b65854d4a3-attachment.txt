@@ -1,0 +1,34 @@
+WARNING  celery.redirected:log.py:227 ^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 case用例:客诉工单列表，由本人创建---待处理
+INFO     root:mylogger.py:78 case用例:客诉工单列表，由本人创建---待处理
+WARNING  celery.redirected:log.py:227 [2021-06-04 19:04:13,035] | mylogger.py |INFO  : case用例:客诉工单列表，由本人创建---待处理
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/workOrderList
+INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/workOrderList
+WARNING  celery.redirected:log.py:227 [2021-06-04 19:04:13,036] | mylogger.py |INFO  : 地址url：https://test.xlvren.com/bp/workOrderList
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 token：973f66a0-013f-4f7a-b358-c0071ae48961
+INFO     root:mylogger.py:78 token：973f66a0-013f-4f7a-b358-c0071ae48961
+WARNING  celery.redirected:log.py:227 [2021-06-04 19:04:13,037] | mylogger.py |INFO  : token：973f66a0-013f-4f7a-b358-c0071ae48961
+WARNING  celery.redirected:log.py:227 header :{'Authorization': 'Bearer 973f66a0-013f-4f7a-b358-c0071ae48961', 'Content-Type': 'application/json'}
+WARNING  celery.redirected:log.py:227 method :get
+WARNING  celery.redirected:log.py:227 pararm :{"page":1,"size":40,"status":1}
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 get 请求 ....
+DEBUG    root:mylogger.py:80 get 请求 ....
+WARNING  celery.redirected:log.py:227 [2021-06-04 19:04:13,038] | mylogger.py |DEBUG : get 请求 ....
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "GET /bp/workOrderList?page=1&size=40&status=1 HTTP/1.1" 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "GET /bp/workOrderList?page=1&size=40&status=1 HTTP/1.1" 200 None
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 测试结果:get,,,{'errorCode': 0, 'data': [{'id': 2, 'type': 1, 'stationId': 100212, 'details': 'wqweqweq', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:40:44', 'createUser': 304851520, 'currentUser': 62, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '黄敏'}, {'id': 3, 'type': 1, 'stationId': 100212, 'details': 'asdfvxcvxcvxc', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:40:58', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}, {'id': 4, 'type': 1, 'stationId': 100212, 'details': 'rtyrtyh', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:42:48', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}, {'id': 5, 'type': 1, 'stationId': 100212, 'details': '测试老虎零', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:43:44', 'createUser': 304851520, 'currentUser': 62, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '穆鹏飞'}, {'id': 10, 'type': 1, 'stationId': 100212, 'details': 'adesafwsfsd', 'phone': '', 'status': 1, 'createTime': '2021-05-14 14:23:25', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}]}
+DEBUG    root:mylogger.py:80 测试结果:get,,,{'errorCode': 0, 'data': [{'id': 2, 'type': 1, 'stationId': 100212, 'details': 'wqweqweq', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:40:44', 'createUser': 304851520, 'currentUser': 62, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '黄敏'}, {'id': 3, 'type': 1, 'stationId': 100212, 'details': 'asdfvxcvxcvxc', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:40:58', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}, {'id': 4, 'type': 1, 'stationId': 100212, 'details': 'rtyrtyh', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:42:48', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}, {'id': 5, 'type': 1, 'stationId': 100212, 'details': '测试老虎零', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:43:44', 'createUser': 304851520, 'currentUser': 62, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '穆鹏飞'}, {'id': 10, 'type': 1, 'stationId': 100212, 'details': 'adesafwsfsd', 'phone': '', 'status': 1, 'createTime': '2021-05-14 14:23:25', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}]}
+WARNING  celery.redirected:log.py:227 [2021-06-04 19:04:13,182] | mylogger.py |DEBUG : 测试结果:get,,,{'errorCode': 0, 'data': [{'id': 2, 'type': 1, 'stationId': 100212, 'details': 'wqweqweq', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:40:44', 'createUser': 304851520, 'currentUser': 62, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '黄敏'}, {'id': 3, 'type': 1, 'stationId': 100212, 'details': 'asdfvxcvxcvxc', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:40:58', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}, {'id': 4, 'type': 1, 'stationId': 100212, 'details': 'rtyrtyh', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:42:48', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}, {'id': 5, 'type': 1, 'stationId': 100212, 'details': '测试老虎零', 'phone': '', 'status': 1, 'createTime': '2021-05-12 15:43:44', 'createUser': 304851520, 'currentUser': 62, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '穆鹏飞'}, {'id': 10, 'type': 1, 'stationId': 100212, 'details': 'adesafwsfsd', 'phone': '', 'status': 1, 'createTime': '2021-05-14 14:23:25', 'createUser': 304851520, 'currentUser': 862885, 'createUserName': '志雄BP', 'stationName': '老虎岭', 'latestOperator': '志雄BP'}]}
+WARNING  celery.redirected:log.py:227 get 请求结束。。。。。。

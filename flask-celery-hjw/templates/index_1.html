@@ -1,0 +1,255 @@
+{% extends "Base.html" %}
+
+{% block  title %}
+首页
+{% endblock %}
+
+{% block css %}
+<!--注意对于 function.js 的加载顺序应该放在 vuejs 和 axios 之后或者参考（4）引入参数defer 或者 async
+async 异步 非同步，即是多线程。加载页面的同时也加载外部引入的文件
+defer 加载完所有文档后，再加载该引入的文件  -->
+    <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.6.8/css/layui.css">
+{% endblock %}
+
+
+{% block js %}
+    <script  src="../static/js/vue.global309.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- 引入 layui.js -->
+{#    <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>#}
+    <script src="https://www.layuicdn.com/layui-v2.6.8/layui.js"></script>
+{% endblock %}
+
+{% block content_body %}
+<div  class="layui-bg-green ">
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-md12 layui-col-lg12">
+            <div class="grid-demo grid-demo-bg1">
+                <h1 align="center">XXXXXXXXXXXXXXX</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend>功能接口</legend>
+</fieldset>
+
+<div  id="one_" class="demo layui-form">
+  <table class="layui-table">
+    <colgroup>
+      <col width="150">
+      <col width="150">
+      <col width="200">
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+          <th>功能</th>
+          <th>结果</th>
+          <th>备注</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <button class="layui-btn layui-btn-primary layui-border-blue" @click="sendEmail">发送邮件 </button>
+            <button class="layui-btn layui-btn-primary layui-border-blue" @click="newfun">newfun </button>
+        </td>
+        <td>[[re]]</td>
+      </tr>
+      <tr>
+          <td> <button class="layui-btn layui-btn-primary layui-border-blue" @click="second">接口测试 </button></td>
+          <td>[[re1]]</td>
+          <td>
+          <form id="form1" method="post"  action="http://81.71.102.80:5000/api/upload" enctype="multipart/form-data">
+            <input id="File1" type="file" name="myfile"/>
+            <input type="submit"></input>&emsp;&emsp;
+              <a href="http://81.71.102.80:5000/api/download" class="layui-btn layui-btn-primary layui-border-blue">结果下载</a>
+          </form>
+          </td>
+      </tr>
+      <tr>
+        <td> <button class="layui-btn layui-btn-primary layui-border-blue" @click="select">数据查询</button></td>
+        <td>[[sel]]</td>
+        <td>
+            <a href="http://81.71.102.80:5000/sql/download" class="layui-btn layui-btn-primary layui-border-blue">结果下载</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+  <legend>数据查询</legend>
+</fieldset>
+
+<div class="lay-ui-container" id="app_all">
+    <div class="layui-row layui-col-space10">
+          <div class="layui-col-md2 layui-col-xs2 layui-col-sm2 layui-bg-blue" >
+            <label class="layui-form-label">数据库选择</label>
+        </div>
+        <div class="layui-col-md8  demo ">
+             <div class="layui-input-inline"  id="v-model-select" >
+
+                  <select name="_sql" lay-verify="required" v-model="selected" >
+                    <option value=""></option>
+                    <option value="阿里数据库">阿里数据库</option>
+                    <option value="腾讯测试库">腾讯测试库</option>
+                    <option value="线上数据库">线上数据库</option>
+                  </select>
+                    &ensp;&ensp;
+                  <span>数据库选择：[[ selected ]]</span>
+
+             </div>
+
+        </div>
+        <div class="layui-col-md2">
+
+        </div>
+    </div>
+
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md2 layui-col-xs2 layui-col-sm2 layui-bg-blue" >
+            <label class="layui-form-label">规则筛选</label>
+        </div>
+        <div class="layui-col-md8 layui-bg-green " pane>
+
+            <div class="layui-input-block" id="v-model-multiple-checkboxes">
+
+            <input type="checkbox" id="jack" value="Jack"  v-model="checkedNames" />
+            <label for="jack">Jack</label>
+                &ensp;
+                <input type="checkbox" id="john" value="John" v-model="checkedNames" />
+                <label for="john">John</label>
+                &ensp;
+                <input type="checkbox" id="mike" value="Mike" v-model="checkedNames" />
+                <label for="mike">Mike</label>
+                &ensp;&ensp;&ensp;&ensp;
+                <span>Checked names: [[ checkedNames ]]</span>
+
+        </div>
+
+        </div>
+        <div class="layui-col-md2">
+
+        </div>
+    </div>
+
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md2 layui-col-xs2 layui-col-sm2 layui-bg-blue" >
+            <label class="layui-form-label">查询语句</label>
+        </div>
+        <div class="layui-col-md8 layui-bg-green" id="v-model-textarea">
+
+
+              <textarea v-model="message" name="desc" placeholder="请输入内容" class="layui-textarea" ></textarea>
+
+                <span>[[ message ]]</span>
+
+
+        </div>
+        <div class="layui-col-md2 layui-col-xs2 layui-col-sm2" >
+
+        </div>
+
+    </div>
+
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md2 layui-col-xs2 layui-col-sm2 layui-bg-blue" >
+            <label class="layui-form-label">执行</label>
+        </div>
+        <div class="layui-col-md8 ">
+            <div class="layui-input-inline">
+              <button class="layui-btn" lay-filter="formDemo" type="button" @click="submit">提交</button>
+              <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+        <div class="layui-col-md2 layui-col-xs2 layui-col-sm2" >
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+//任务执行
+Vue.createApp({
+    delimiters:['[[',']]'],
+    data(){
+        return {
+            re:'',
+            result: '异步任务进度',
+            re1:'',
+            result1: '异步任务进度1',
+            sel:'',
+            sel1:'异步任务执行'
+        }
+    },
+    methods:
+        {
+            sendEmail(){
+                axios.get('http://81.71.102.80:5000/req/add_task').
+          then(response=>(this.result = response,this.re= response.data)).
+                catch( function (error) {console.log(error)})
+            },
+            second(){
+                axios.get('http://81.71.102.80:5000/req/second').
+          then(response=>(this.result1 = response,this.re1= response.data)).
+                catch( function (error) {console.log(error)})
+            },
+
+            select(){
+                axios.get('http://81.71.102.80:5000/req/select').
+          then(response=>(this.sel1 = response,this.sel= response.data)).
+                catch( function (error) {console.log(error)})
+            },
+            newfun(){
+                axios.get('http://81.71.102.80:5000/req/newfun').
+          then(response=>(this.sel1 = response,this.sel= response.data)).
+                catch( function (error) {console.log(error)})
+            }
+
+
+        }
+}).mount('#one_')
+
+//多行文本
+Vue.createApp({
+    delimiters:['[[',']]'],
+  data() {
+    return {
+      message: ''
+    }
+  }
+}).mount('#v-model-textarea')
+//单选
+Vue.createApp({
+     delimiters:['[[',']]'],
+  data() {
+    return {
+      selected: ''
+    }
+  }
+}).mount('#v-model-select')
+//多选
+Vue.createApp({
+     delimiters:['[[',']]'],
+    data() {
+    return {
+      checkedNames: []
+    }
+    }
+}).mount('#v-model-multiple-checkboxes')
+
+
+</script>
+
+
+{% endblock %}
+
+

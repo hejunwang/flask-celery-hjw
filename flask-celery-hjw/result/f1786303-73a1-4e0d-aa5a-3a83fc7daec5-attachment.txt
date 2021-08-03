@@ -1,0 +1,34 @@
+WARNING  celery.redirected:log.py:227 ^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 case用例:4获取系统菜单树
+INFO     root:mylogger.py:78 case用例:4获取系统菜单树
+WARNING  celery.redirected:log.py:227 [2021-06-09 18:44:25,308] | mylogger.py |INFO  : case用例:4获取系统菜单树
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/menuList
+INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/menuList
+WARNING  celery.redirected:log.py:227 [2021-06-09 18:44:25,309] | mylogger.py |INFO  : 地址url：https://test.xlvren.com/bp/menuList
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 token：7a25d7d7-e452-42da-aba7-bf61a83e0e60
+INFO     root:mylogger.py:78 token：7a25d7d7-e452-42da-aba7-bf61a83e0e60
+WARNING  celery.redirected:log.py:227 [2021-06-09 18:44:25,310] | mylogger.py |INFO  : token：7a25d7d7-e452-42da-aba7-bf61a83e0e60
+WARNING  celery.redirected:log.py:227 header :{'Authorization': 'Bearer 7a25d7d7-e452-42da-aba7-bf61a83e0e60', 'Content-Type': 'application/json'}
+WARNING  celery.redirected:log.py:227 method :post
+WARNING  celery.redirected:log.py:227 pararm :{}
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 post 请求...
+DEBUG    root:mylogger.py:80 post 请求...
+WARNING  celery.redirected:log.py:227 [2021-06-09 18:44:25,311] | mylogger.py |DEBUG : post 请求...
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "POST /bp/menuList HTTP/1.1" 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "POST /bp/menuList HTTP/1.1" 200 None
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 `````````````````````````````````````````````````
+DEBUG    root:mylogger.py:80 `````````````````````````````````````````````````
+WARNING  celery.redirected:log.py:227 [2021-06-09 18:44:25,515] | mylogger.py |DEBUG : `````````````````````````````````````````````````
+WARNING  celery.redirected:log.py:227 post 请求 结束。。。。。

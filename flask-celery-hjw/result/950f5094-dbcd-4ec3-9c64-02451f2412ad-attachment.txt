@@ -1,0 +1,34 @@
+WARNING  celery.redirected:log.py:227 ^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 case用例:站点设备信息统计
+INFO     root:mylogger.py:78 case用例:站点设备信息统计
+WARNING  celery.redirected:log.py:227 [2021-06-07 15:01:23,049] | mylogger.py |INFO  : case用例:站点设备信息统计
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/station/partnerDeviceInfo
+INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/station/partnerDeviceInfo
+WARNING  celery.redirected:log.py:227 [2021-06-07 15:01:23,050] | mylogger.py |INFO  : 地址url：https://test.xlvren.com/bp/station/partnerDeviceInfo
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 token：a0d21ecf-945e-4ede-b5a7-c5c6aafa0ec6
+INFO     root:mylogger.py:78 token：a0d21ecf-945e-4ede-b5a7-c5c6aafa0ec6
+WARNING  celery.redirected:log.py:227 [2021-06-07 15:01:23,050] | mylogger.py |INFO  : token：a0d21ecf-945e-4ede-b5a7-c5c6aafa0ec6
+WARNING  celery.redirected:log.py:227 header :{'Authorization': 'Bearer a0d21ecf-945e-4ede-b5a7-c5c6aafa0ec6', 'Content-Type': 'application/json'}
+WARNING  celery.redirected:log.py:227 method :post
+WARNING  celery.redirected:log.py:227 pararm :{}
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 post 请求...
+DEBUG    root:mylogger.py:80 post 请求...
+WARNING  celery.redirected:log.py:227 [2021-06-07 15:01:23,057] | mylogger.py |DEBUG : post 请求...
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "POST /bp/station/partnerDeviceInfo HTTP/1.1" 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "POST /bp/station/partnerDeviceInfo HTTP/1.1" 200 None
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 `````````````````````````````````````````````````
+DEBUG    root:mylogger.py:80 `````````````````````````````````````````````````
+WARNING  celery.redirected:log.py:227 [2021-06-07 15:01:23,259] | mylogger.py |DEBUG : `````````````````````````````````````````````````
+WARNING  celery.redirected:log.py:227 post 请求 结束。。。。。

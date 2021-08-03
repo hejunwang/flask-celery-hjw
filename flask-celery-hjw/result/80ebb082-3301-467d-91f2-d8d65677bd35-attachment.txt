@@ -1,0 +1,25 @@
+WARNING  celery.redirected:log.py:227 ---------------token---------------------
+WARNING  celery.redirected:log.py:227 <configparser.ConfigParser object at 0x7fe5e4210ba8>
+WARNING  celery.redirected:log.py:227 https://test.xlvren.com/bp/login
+WARNING  celery.redirected:log.py:227 ---------------headers---------------------
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "POST /bp/login HTTP/1.1" 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "POST /bp/login HTTP/1.1" 200 None
+WARNING  celery.redirected:log.py:227 **************************************************
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 ERROR    root:mylogger.py:84 测试结果:{'errorCode': 0, 'data': {'token': 'ac85a2cf-0058-4443-98ef-f1d9bd4147f8', 'sid': 'eWLNmEKPTgb1'}}
+ERROR    root:mylogger.py:84 测试结果:{'errorCode': 0, 'data': {'token': 'ac85a2cf-0058-4443-98ef-f1d9bd4147f8', 'sid': 'eWLNmEKPTgb1'}}
+WARNING  celery.redirected:log.py:227 [2021-06-04 22:35:53,390] | mylogger.py |ERROR : 测试结果:{'errorCode': 0, 'data': {'token': 'ac85a2cf-0058-4443-98ef-f1d9bd4147f8', 'sid': 'eWLNmEKPTgb1'}}
+WARNING  celery.redirected:log.py:227 **************************************************
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 token:ac85a2cf-0058-4443-98ef-f1d9bd4147f8
+DEBUG    root:mylogger.py:80 token:ac85a2cf-0058-4443-98ef-f1d9bd4147f8
+WARNING  celery.redirected:log.py:227 [2021-06-04 22:35:53,391] | mylogger.py |DEBUG : token:ac85a2cf-0058-4443-98ef-f1d9bd4147f8
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 token:ac85a2cf-0058-4443-98ef-f1d9bd4147f8
+DEBUG    root:mylogger.py:80 token:ac85a2cf-0058-4443-98ef-f1d9bd4147f8
+WARNING  celery.redirected:log.py:227 [2021-06-04 22:35:53,392] | mylogger.py |DEBUG : token:ac85a2cf-0058-4443-98ef-f1d9bd4147f8

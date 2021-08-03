@@ -1,0 +1,34 @@
+WARNING  celery.redirected:log.py:227 ^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^^--2--^
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 case用例:14客诉工单 详情
+INFO     root:mylogger.py:78 case用例:14客诉工单 详情
+WARNING  celery.redirected:log.py:227 [2021-06-09 19:59:49,491] | mylogger.py |INFO  : case用例:14客诉工单 详情
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/workOrderDetails
+INFO     root:mylogger.py:78 地址url：https://test.xlvren.com/bp/workOrderDetails
+WARNING  celery.redirected:log.py:227 [2021-06-09 19:59:49,492] | mylogger.py |INFO  : 地址url：https://test.xlvren.com/bp/workOrderDetails
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 INFO     root:mylogger.py:78 token：892c8394-53ac-44bd-af3b-91394f8583aa
+INFO     root:mylogger.py:78 token：892c8394-53ac-44bd-af3b-91394f8583aa
+WARNING  celery.redirected:log.py:227 [2021-06-09 19:59:49,493] | mylogger.py |INFO  : token：892c8394-53ac-44bd-af3b-91394f8583aa
+WARNING  celery.redirected:log.py:227 header :{'Authorization': 'Bearer 892c8394-53ac-44bd-af3b-91394f8583aa', 'Content-Type': 'application/json'}
+WARNING  celery.redirected:log.py:227 method :get
+WARNING  celery.redirected:log.py:227 pararm :{"id":6}
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 get 请求 ....
+DEBUG    root:mylogger.py:80 get 请求 ....
+WARNING  celery.redirected:log.py:227 [2021-06-09 19:59:49,494] | mylogger.py |DEBUG : get 请求 ....
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+DEBUG    urllib3.connectionpool:connectionpool.py:975 Starting new HTTPS connection (1): test.xlvren.com:443
+WARNING  celery.redirected:log.py:227 DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "GET /bp/workOrderDetails?id=6 HTTP/1.1" 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:461 https://test.xlvren.com:443 "GET /bp/workOrderDetails?id=6 HTTP/1.1" 200 None
+WARNING  celery.redirected:log.py:227 log_dir:../logs
+WARNING  celery.redirected:log.py:227 folder exist!
+WARNING  celery.redirected:log.py:227 DEBUG    root:mylogger.py:80 测试结果:get,,,{'errorCode': 0, 'data': {'id': 6, 'type': 1, 'stationId': 100208, 'details': '测试', 'status': 1, 'createTime': '2021-06-08 16:38:08', 'createUser': 139, 'currentUser': 862885, 'stationName': '充电桩模拟209370', 'workOrderLogs': [{'id': 6, 'workOrderId': 6, 'log': '工单创建', 'userId': 139, 'createTime': '2021-06-08 16:38:08', 'userName': 'admin'}]}}
+DEBUG    root:mylogger.py:80 测试结果:get,,,{'errorCode': 0, 'data': {'id': 6, 'type': 1, 'stationId': 100208, 'details': '测试', 'status': 1, 'createTime': '2021-06-08 16:38:08', 'createUser': 139, 'currentUser': 862885, 'stationName': '充电桩模拟209370', 'workOrderLogs': [{'id': 6, 'workOrderId': 6, 'log': '工单创建', 'userId': 139, 'createTime': '2021-06-08 16:38:08', 'userName': 'admin'}]}}
+WARNING  celery.redirected:log.py:227 [2021-06-09 19:59:49,648] | mylogger.py |DEBUG : 测试结果:get,,,{'errorCode': 0, 'data': {'id': 6, 'type': 1, 'stationId': 100208, 'details': '测试', 'status': 1, 'createTime': '2021-06-08 16:38:08', 'createUser': 139, 'currentUser': 862885, 'stationName': '充电桩模拟209370', 'workOrderLogs': [{'id': 6, 'workOrderId': 6, 'log': '工单创建', 'userId': 139, 'createTime': '2021-06-08 16:38:08', 'userName': 'admin'}]}}
+WARNING  celery.redirected:log.py:227 get 请求结束。。。。。。

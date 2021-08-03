@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@ssh://root@81.71.102.80:22/root/auto_online_py37_app/bin/python3" />
+      </list>
+    </list>
+  </component>
+</project>
